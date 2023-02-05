@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+* {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: rgb(240,240,240);
+    font-size: 22px;
+}
+
+body {
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: rgb(251, 199, 127);
+}
+
+header{
+    padding: 20px 10px;
+    height: 150px;
+    text-align: center;
+}
+
+#kategoria {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+#kategoria:hover {
+	background-color:#5cbf2a;
+}
+#kategoria:active {
+	position:relative;
+	top:1px;
+}
+
+
+h1 {
+    padding: 10px;
+}
+
+.flex_box{
+    display: flex;
+    justify-content:center;
+}
+
+.departures {
+    background-color: rgb(6,6,6);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.departures table {
+    background-color: rgb(46,46,46);
+    text-align: left;
+}
+
+.departures thead{
+    min-height: auto;
+}
+
+.departures table div {
+    border: solid 2px rgb(26,26,26);
+    background-color: rgb(0,0,0);
+    min-width: 12px;
+    height: 30px;
+    float: left;
+}
+
+.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+#time {
+    width: 160px;
+}
+
+#destination {
+    width: 600px;
+}
+
+#flight {
+    width: 225px;
+}
+
+#gate {
+    width: auto;
+}
+
+#remarks {
+    width: 260px;
+}
+
+.loader-holder{
+    display:flex;
+    justify-content:center;
+    margin-top: 10px;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid rgb(240, 240, 86);
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
